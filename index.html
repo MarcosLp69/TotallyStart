@@ -1,11 +1,13 @@
-<h1>Hello World!</h1>
+<h1>Welcome</h1>
+<div id="divsearch">
 <form action="https://google.com/search" method="GET">
-    <label id="labelspace">|</label><input type="text" name="q" placeholder="Search The Web">
+    <input type="text" name="q" placeholder="Search The Web">
 </form>
+</div>
 
 <style>
     body{
-        background-color:black;
+        background-color:#202225;
         color:white;
     }
 
@@ -17,11 +19,17 @@
 
     input{
         width:500px;
+        position:relative;
+        color:greenyellow;
+        background-color:black;
+        border-radius:7px;
+        border-color:black;
+        border-style:solid;
+        text-align:center;
+        height:30px;
     }
 
-    #labelspace{
-        color:black;
-        display:inline-block;
-        width:36.4%;
+    div{
+        text-align:center;
     }
 </style>
