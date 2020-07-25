@@ -1,8 +1,13 @@
 <h1>Welcome</h1>
 <div id="divsearch">
 <form action="https://google.com/search" method="GET">
-    <input type="text" name="q" placeholder="Search The Web">
+    <input type="text" name="q" id="search" placeholder="Search The Web">
 </form>
+</div>
+
+<br>
+<div id="divSites">
+    <a href="https://youtube.com">YouTube</a><label class="blank"> || </label><a href="https://reddit.com">Reddit</a>
 </div>
 
 <style>
@@ -12,13 +17,14 @@
     }
 
     h1{
+        margin-top:50px;
         text-align:center;
         font-family:undefined medium, Segoe UI, serif;
-        font-size:50px;
+        font-size:60px;
     }
 
-    input{
-        width:500px;
+    #search{
+        width:600px;
         position:relative;
         color:#acfa11;
         background-color:black;
@@ -26,10 +32,37 @@
         border-color:black;
         border-style:solid;
         text-align:center;
-        height:30px;
+        height:35px;
+        font-size:15px;
     }
 
     div{
         text-align:center;
+    }
+
+    #divSites{
+        line-height:31px;
+        margin-left:auto;
+        margin-right:auto;
+
+        background-color:black;
+        width:600px;
+        height:35px;
+        border-radius:7px;
+        font-size:15px;
+        color:#acfa11;
+    }
+
+    #divSites a{
+        color:#acfa11;
+        text-decoration:none;
+    }
+
+    a:hover{
+        color:aqua!important;
+    }
+
+    .blank{
+        color:black;
     }
 </style>
