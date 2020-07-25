@@ -1,6 +1,6 @@
 <h1>Hello World!</h1>
 <form action="https://google.com/search" method="GET">
-    <input type="text" name="q" placeholder="Search The Web">
+    <label id="labelspace">|</label><input type="text" name="q" placeholder="Search The Web">
 </form>
 
 <style>
@@ -11,9 +11,17 @@
 
     h1{
         text-align:center;
+        font-family:undefined medium, Segoe UI, serif;
+        font-size:50px;
     }
 
     input{
-        alignment:center;
+        width:500px;
+    }
+
+    #labelspace{
+        color:black;
+        display:inline-block;
+        width:36.4%;
     }
 </style>
